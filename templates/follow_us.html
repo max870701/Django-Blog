@@ -1,0 +1,8 @@
+{% if social_links %}
+<h4 class="font-italic">Follow Us</h4>
+<ol class="list-unstyled">
+  {% for link in social_links %}
+  <li><a href="{{ link.link }}" target="_blank">{{ link.platform }}</a></li>
+  {% endfor %}
+</ol>
+{% endif %}
